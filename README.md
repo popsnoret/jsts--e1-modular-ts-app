@@ -21,9 +21,11 @@ Applikationen ska redovisas fullt fungerande i webbläsaren tillsammans med sin 
 - **utnyttja state och omrendering vid något tillfälle**
   - Det ska finnas state-variabler, antingen direkt i tillhörande moduler eller i en globalt tillgänglig store. När en state-variabels värde uppdateras ska sidan/modulen renderas om för att demonstrera det uppdaterade värdet. Utan detta förblir sidan statisk.
 - **innehålla någon form av interaktivitet**
-  - Blanda statiska och dynamiska filer. Experimentera med båda koncepten och injecera JavaScript-logik där det behövs.
+  - Blanda statiska och dynamiska filer. Experimentera med båda koncepten och injecera JavaScript-logik där det behövs. Det är inget fel i att bygga en app helt utan statiska sidor om det visar sig vara bäst. Uppgiftens huvudfokus är JavaScript. Rå HTML är ni redan välbekanta med.
 - **hämta data från ett API**
   - Förslag på public APIs finns överallt på nätet, i [js--fetch-intro](https://github.com/chas-academy/js--fetch-intro) eller längst ned i [Frontendresurser](https://www.notion.so/chasacademy/Frontend-250d1037d091808e8f5be682f4afbefb).
+- **kunna komplieras till JavaScript och byggas**
+  - Appen ska i praktiken kunna deployas och fungera i en live-miljö. Deployment kommer inte att vara en del av uppgiften, men TypeScript och bundlern ska kunna bygga en `dist`-mapp med alla relevanta filer.
 
 ### Övriga krav
 
@@ -54,6 +56,7 @@ Det finns i huvudsak två tillvägagångssätt, båda med sina egna för- och na
 
    1. Följ de relevanta stegen i guiden i [ts--intro](https://github.com/chas-academy/js--fetch-intro) - Installera dev dependencyn och sätt upp skriptet. Om ni väljer att initiera TypeScript eller skapa en `tsconfig.json`-fil manuellt och klistra in kodstycket från guiden är valfritt - Kodstycket kommer från Vite och ert projekt är sannolikt byggt med Vite.
    2. Konvertera alla `.js`-filer till `.ts`.
+   3. Lägg till skriptet `"build": "tsc && vite build"` i `package.json`för att kunna bygga en deploybar version av appen.
 
 2. Skapa ett nytt projekt med en bundler utifrån en TypeScript template
    - Förslagsvis `npm create vite@latest ersätt-med-appens-namn-utan-mellanrum -- --template vanilla-ts`.
