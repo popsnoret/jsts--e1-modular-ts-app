@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #ffe6e6;
+  --secondary-color: #ffd1d1;
+  --button-hover: hsl(0, 100%, 97%);
+  --text-color: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background: repeating-linear-gradient(90deg, #ffe6e6 0px, #ffe6e6 20px, #ffd1d1 20px, #ffd1d1 40px);
+  color: var(--text-color);
+  box-sizing: border-box;
+  font-family: "Bungee", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.header nav {
+  display: flex;
+  gap: 16px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.header a:hover,
+button:hover {
+  transform: translateY(2px);
+  transition: 0.25s ease;
+}
+
+p {
+  width: 30rem;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.kolumner {
+  display: flex;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  border: 5px solid var(--secondary-color);
+}
+
+.kolumner > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h1,
+h2,
+h3,
+footer {
+  text-align: center;
+  color: var(--text-color);
+  font-family: Fredoka, cursive;
+  margin: 5px;
+  padding: 4px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* GODIS */
+
+/* godislista */
+.godislista {
+  border: 1px solid transparent;
+  padding: 8px;
+  list-style: none;
+}
+
+.godis-rad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+}
+
+/* valt godis */
+
+#valt-godis {
+  padding: 10px;
+  margin: 0px 0px 15px 0px;
+  border: 5px solid var(--secondary-color);
+  margin-right: 20px;
+  border-radius: 1rem;
+  min-height: 160px;
+  list-style: square;
+  background: var(--primary-color);
+}
+
+#valt-godis li {
+  margin-left: 15px;
+}
+
+/* knapp */
+.btn {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 26px;
+  border: 3px solid var(--secondary-color);
+  background: var(--primary-color);
+}
+
+.btn:hover {
+  background: var(--button-hover);
+}
+
+/* KVITTO */
+
+.kvitto-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kvitto-box {
+  background: rgb(243, 243, 243);
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Fake Receipt", monospace;
+  font-size: 0.9rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.kvitto-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0px 20px 10px;
+}
+
+.kvitto-box h2 {
+  font-family: "Fake Receipt", monospace;
+  padding: 10px 0px 10px 0px;
+}
+
+.kvitto-box button {
+  padding: 4px 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 26px;
+  border: 2px solid var(--secondary-color);
+  background: var(--primary-color);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Footer */
+
+/* formulär/kontakt */
+.form {
+  max-width: 500px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 1.4rem;
+  background: var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 5px solid var(--secondary-color);
+}
+
+.form h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.form textarea {
+  min-height: 100px;
+  padding: 12px;
+  border: 5px solid var(--secondary-color);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  background: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+  color: black;
+}
+
+.form button:hover {
+  background: var(--button-hover);
+}
+
+.thank-you-message {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.total-godis {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn.rensa-btn {
+  margin-left: 20px;
+}
