@@ -54,7 +54,7 @@ Det finns i huvudsak två tillvägagångssätt, båda med sina egna för- och na
 
 1. Konfigurera TypeScript i ett redan existerande projekt
 
-   1. Följ de relevanta stegen i guiden i [ts--intro](https://github.com/chas-academy/js--fetch-intro) - Installera dev dependencyn och sätt upp skriptet. Skapa en `tsconfig.json`-fil och klistra in reglerna som krävs för bundlern ni använder (Kodstycket med ts-reglerna i [ts--intro](https://github.com/chas-academy/js--fetch-intro) kommer från Vite). Nu kommer `tsc` endast fungera för att hitta ts errors, själva build-delen görs enbart av bundlern.
+   1. Följ de relevanta stegen i guiden i [ts--intro](https://github.com/chas-academy/ts--intro) - Installera dev dependencyn och sätt upp skriptet. Skapa en `tsconfig.json`-fil och klistra in reglerna som krävs för bundlern ni använder (Kodstycket med ts-reglerna i [ts--intro](https://github.com/chas-academy/ts--intro) kommer från Vite). Nu kommer `tsc` endast fungera för att hitta ts errors, själva build-delen görs enbart av bundlern.
    2. Konvertera alla `.js`-filer till `.ts`.
    3. Lägg till skriptet `"build": "tsc && vite build"` i `package.json`för att kunna bygga en deploybar version av appen.
 
