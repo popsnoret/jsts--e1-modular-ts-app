@@ -13,7 +13,7 @@ export default function home() {
   div.appendChild(title);
 
   const info = document.createElement("p");
-  info.textContent = "Välj ditt favoritgodis från listan till höger och se ditt valda godis i kolumnen till vänster. När du är redo kan du visa ditt kvitto!";
+  info.textContent = "Välj ditt favoritgodis från listan till vänster och se ditt valda godis i kolumnen till höger. När du är redo kan du visa ditt kvitto!";
   div.appendChild(info);
 
   // wrapper med två kolumner
